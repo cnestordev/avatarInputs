@@ -19,7 +19,7 @@
 			<span class="infoText"><i class="fas fa-info-circle"></i>All fields required.</span>
 		</div>
 		<form action="/" method="post">
-			<input type="text" name="name" placeholder="name" required="">
+			<input type="text" name="name" placeholder="name" required autocomplete="off">
 			<div class="avatarCont">
 				<% images.forEach((img, i) => { %>
 					<input name="url" value=<%= i %> type="radio" id=<%=i%> name="avatar" required>

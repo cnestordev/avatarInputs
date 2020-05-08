@@ -1,12 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
+const icons = require(__dirname + '/icons.js')
 require('dotenv').config()
 
 let user = []
-let images = ['https://i.ya-webdesign.com/images/avatar-icon-png-7.png', 'https://www.clipartmax.com/png/full/257-2572603_user-man-social-avatar-profile-icon-man-avatar-in-circle.png',
-'https://cdn.iconscout.com/icon/free/png-256/avatar-376-456328.png', 'https://cdn.iconscout.com/icon/free/png-256/avatar-367-456319.png', 'https://cdn.iconscout.com/icon/free/png-256/avatar-369-456321.png'
-]
+let images = icons
+
 const dbUrl = process.env.DB_URL;
 
 const app = express()

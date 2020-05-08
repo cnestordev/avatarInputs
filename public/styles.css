@@ -80,16 +80,20 @@ button {
 	background: white;
 	padding: 2% 5%;
 	margin-top: 2%;
+	width: 40%;
+	margin-top: 4%;
+	margin-bottom: 6%;
 }
 
 button:hover {
 	border-color: transparent;
 	background: #ccc;
 	cursor: pointer;
+	transition: 200ms;
 }
 
 .avatarCont {
-	margin: 5% auto;
+	margin: 7% auto 5%;
 }
 
 .selectAvatar {
@@ -124,7 +128,7 @@ span {
 }
 
 input[type="radio"]:checked + label span {
-	filter: drop-shadow(0px 0px 3px #4c00d2);
+	filter: drop-shadow(0px 0px 3px #006cbf);
 }
 
 .selected {
@@ -141,6 +145,11 @@ input[type="radio"]:checked + label span {
 	.box, .formBox {
 		width: 65%;
 	}
+
+	button {
+		width: 40%;
+		margin-top: 5%;
+	}
 }
 
 @media (max-width: 730px) {
@@ -149,6 +158,11 @@ input[type="radio"]:checked + label span {
 	}
 	.box, .formBox {
 		width: 75%;
+	}
+
+	button {
+		width: 45%;
+		margin-top: 5%;
 	}
 }
 
@@ -159,6 +173,11 @@ input[type="radio"]:checked + label span {
 
 	.box, .formBox {
 		width: 83%;
+	}
+
+	button {
+		width: 50%;
+		margin-top: 5%;
 	}
 }
 
@@ -178,5 +197,10 @@ input[type="radio"]:checked + label span {
 
 	form {
 		margin-top: 3%;
+	}
+
+	button {
+		width: 60%;
+		margin-top: 5%;
 	}
 }
