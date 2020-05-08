@@ -19,33 +19,59 @@ body {
 }
 
 .box {
-	padding: 2% 5%;
-	position: relative;
+	padding: 2% 5% 3% 5%;
+}
+
+form {
+	margin-top: 1%;
 }
 
 .formBox {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
 img {
-	width: 13%;
+	width: 31%;
+}
+
+.infoCont {
 	position: absolute;
-	right: 3%;
-	top: 3%;
+	top: -3%;
+}
+
+h3 {
+	margin-bottom: 3%;
+}
+
+i {
+	margin-right: 2%;
+}
+
+.infoText {
+	font-size: 0.7rem;
+    display: block;
+    text-align: center;
+    width: 100%;
 }
 
 input[type="text"] {
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	border-radius: 3px;
-	margin-top: 2%;
-	padding: 0.75% 2.5% 0.75% 1%;
+	margin-top: 15%;
+	padding: 2% 2.5% 2% 4%;
+	width: 58%;
+	font-size: 0.8rem;
 }
 
 textarea {
+	border: 1px solid gray;
 	display: block;
 	margin-top: 2%;
+	resize: none;
+	width: 100%;
 }
 
 button {
@@ -106,4 +132,51 @@ input[type="radio"]:checked + label span {
     background: #673AB7;
     border-radius: 50%;
     padding: 0%;
+}
+
+@media (max-width: 995px) {
+	img {
+		width: 29%;
+	}
+	.box, .formBox {
+		width: 65%;
+	}
+}
+
+@media (max-width: 730px) {
+	img {
+		width: 27%;
+	}
+	.box, .formBox {
+		width: 75%;
+	}
+}
+
+@media (max-width: 650px) {
+	img {
+		width: 25%;
+	}
+
+	.box, .formBox {
+		width: 83%;
+	}
+}
+
+@media (max-width: 545px) {
+
+	img {
+		width: 23%;
+	}
+
+	.box, .formBox {
+		width: 100%;
+	}
+
+	h3 {
+		font-size: 1rem;
+	}
+
+	form {
+		margin-top: 3%;
+	}
 }
