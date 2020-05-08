@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+* {
+	font-family: 'Didact Gothic', sans-serif;
+}
+
 body {
 	background: ghostwhite;
 }
@@ -10,6 +16,10 @@ body {
 	text-align: center;
 	margin: 2% auto;
 	padding: 2%;
+}
+
+.box {
+	padding: 2% 5%;
 }
 
 .formBox {
