@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Umm</title>
+</head>
+<body>
+	<div class="box">
+		<h1>Welcome, <%= name %></h1>
+		<img src=<%= url %> >
+		<p> <%= bio %></p>
+	</div>
+
+	<div class="formBox">
+		<form action="/" method="post">
+			<input type="text" name="name" placeholder="name">
+			<div class="avatarCont">
+				<% images.forEach(img => { %>
+					<img class="selectAvatar" src=<%= img %> >
+			<%	}) %>
+			</div>
+			<textarea name="bio" cols="50" rows="7"></textarea>
+			<button>send</button>
+		</form>
+	</div>
+</body>
+</html>
