@@ -13,13 +13,14 @@
 
 	<div class="formBox">
 		<form action="/" method="post">
-			<input type="text" name="name" placeholder="name">
+			<input type="text" name="name" placeholder="name" required="">
 			<div class="avatarCont">
-				<% images.forEach(img => { %>
-					<img class="selectAvatar" src=<%= img %> >
+				<% images.forEach((img, i) => { %>
+					<input name="url" value=<%= i %> type="radio" id=<%=i%> name="avatar" required>
+					<label for=<%=i%> ><span style="background-image: url('<%= img %>')"></span></label>
 			<%	}) %>
 			</div>
-			<textarea name="bio" cols="50" rows="7"></textarea>
+			<textarea name="bio" cols="50" rows="7" required></textarea>
 			<button>send</button>
 		</form>
 	</div>

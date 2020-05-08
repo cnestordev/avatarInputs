@@ -34,6 +34,20 @@ textarea {
 	margin-top: 2%;
 }
 
+button {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 2px;
+	background: white;
+	padding: 2% 5%;
+	margin-top: 2%;
+}
+
+button:hover {
+	border-color: transparent;
+	background: #ccc;
+	cursor: pointer;
+}
+
 .avatarCont {
 	margin: 5% auto;
 }
@@ -45,6 +59,32 @@ textarea {
 
 .selectAvatar:last-of-type {
 	margin-right: 0;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+label {
+	margin-right: 1.5%;
+}
+
+label:last-of-type {
+	margin-right: 0;
+}
+
+span {
+	background-size: 50px 50px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+
+}
+
+input[type="radio"]:checked + label span {
+	filter: drop-shadow(0px 0px 3px #4c00d2);
 }
 
 .selected {
