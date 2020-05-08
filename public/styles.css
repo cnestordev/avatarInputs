@@ -20,6 +20,7 @@ body {
 
 .box {
 	padding: 2% 5%;
+	position: relative;
 }
 
 .formBox {
@@ -29,7 +30,10 @@ body {
 }
 
 img {
-	width: 18%;
+	width: 13%;
+	position: absolute;
+	right: 3%;
+	top: 3%;
 }
 
 input[type="text"] {
