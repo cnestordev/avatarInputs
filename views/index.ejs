@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="https://kit.fontawesome.com/58ff903b9e.js" crossorigin="anonymous"></script>
-	<title>Umm</title>
-</head>
-<body>
-	<div class="box">
-		<h1>Welcome, <%= name %></h1>
-		<img src=<%= url %> >
-		<p> <%= bio %></p>
-	</div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/58ff903b9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Avatars</title>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Welcome, <%= name %></h1>
+      <img src="<%" ="url" % /> >
+      <p><%= bio %></p>
+    </div>
 
-	<div class="formBox">
-		<div class="infoCont">
-			<h3>Create New User Info</h3>
-			<span class="infoText"><i class="fas fa-info-circle"></i>All fields required.</span>
-		</div>
-		<form action="/" method="post">
-			<input type="text" name="name" placeholder="name" required autocomplete="off">
-			<div class="avatarCont">
-				<% images.forEach((img, i) => { %>
-					<input name="url" value=<%= i %> type="radio" id=<%=i%> name="avatar" required>
-					<label for=<%=i%> ><span style="background-image: url('<%= img %>')"></span></label>
-			<%	}) %>
-			</div>
-			<textarea name="bio" cols="50" rows="7" required placeholder="enter your bio"></textarea>
-			<button>send</button>
-		</form>
-	</div>
-</body>
+    <div class="formBox">
+      <div class="infoCont">
+        <h3>Create New User Info</h3>
+        <span class="infoText"
+          ><i class="fas fa-info-circle"></i>All fields required.</span
+        >
+      </div>
+      <form action="/" method="post">
+        <input
+          type="text"
+          name="name"
+          placeholder="name"
+          required
+          autocomplete="off"
+        />
+        <div class="avatarCont">
+          <% images.forEach((img, i) => { %>
+          <input name="url" value="<%" ="i" % /> type="radio" id=<%=i%>
+          name="avatar" required>
+          <label for="<%" ="i%">
+            ><span style="background-image: url('<%= img %>')"></span
+          ></label>
+          <% }) %>
+        </div>
+        <textarea
+          name="bio"
+          cols="50"
+          rows="7"
+          required
+          placeholder="enter your bio"
+        ></textarea>
+        <button>send</button>
+      </form>
+    </div>
+  </body>
 </html>
